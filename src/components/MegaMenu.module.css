@@ -28,14 +28,25 @@
 }
 
 .dropbtn:hover {
-    transition:font-weight ease-out 0.1s;
-    -webkit-transition:font-weight ease-out 0.1s;
-    -moz-transition:font-weight ease-out 0.1s;
-    -ms-transition:font-weight ease-out 0.1s;
-    -o-transition:font-weight ease-out 0.1s;
+    transition:font-weight ease-in 0.1s;
+    -webkit-transition:font-weight ease-in 0.1s;
+    -moz-transition:font-weight ease-in 0.1s;
+    -ms-transition:font-weight ease-in 0.1s;
+    -o-transition:font-weight ease-in 0.1s;
     font-weight: 700;
     border-bottom:2px solid #ee4a1b;
 }
+
+.tabStyles {
+    transition:font-weight ease-in 0.1s;
+    -webkit-transition:font-weight ease-in 0.1s;
+    -moz-transition:font-weight ease-in 0.1s;
+    -ms-transition:font-weight ease-in 0.1s;
+    -o-transition:font-weight ease-in 0.1s;
+    font-weight: 700;
+    border-bottom:2px solid #ee4a1b;
+}
+
 
 
 .dropdownContent {
