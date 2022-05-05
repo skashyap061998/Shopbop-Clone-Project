@@ -8,7 +8,7 @@ const initState = {
     products: [],
   };
   
-  const reducer = (state = initState, { type, payload }) => {
+  const ProdReducer = (state = initState, { type, payload }) => {
     switch (type) {
       case IS_LOADING:
         return {
@@ -49,4 +49,4 @@ const initState = {
         return state;
     }
   };
-  export { reducer };
+  export default ProdReducer ;
