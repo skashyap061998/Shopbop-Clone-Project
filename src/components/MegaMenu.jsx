@@ -1,0 +1,420 @@
+import React from 'react';
+import styles from './MegaMenu.module.css'
+
+const MegaMenu = () => {
+  return (
+    <>
+        <div className={styles.drop}>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>WHAT'S NEW</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>WHAT'S NEW</p>
+                <a href="#">New Today</a>
+                <a href="#">New This Week</a>
+                <a href="#">Top Sellers</a>
+                <a href="#">Designer Boutique</a>
+                <a href="#">All What's New</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>WHAT'S NEW BY CATEGORY</p>
+                <a href="#">Clothing</a>
+                <a href="#">Shoes</a>
+                <a href="#">Bags</a>
+                <a href="#">Jewelery & Accessories</a>
+                <a href="#">Men</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>DISCOVER</p>
+                <a href="#">Party Perfect</a>
+                <a href="#">Destination Dresses</a>
+                <a href="#">The Latest Form Cult Gaia</a>
+                <a href="#">Adventure Time</a>
+                <a href="#">Dream Dresses</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_whatsnew_slot1_dresses.jpg" alt=""/>
+                <p className={styles.dropHeadings}>The Dress Shop</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>OUR FAVORITES</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>OUR FAVORITES</p>
+                <a href="#">Spring '22 Trend Edit</a>
+                <a href="#">AAPI Designers & AAPI</a>
+                <a href="#">Black Owned</a>
+                <a href="#">Back in Stock</a>
+                <a href="#">Caroline's Hearts</a>
+                <a href="#">Designer Boutique</a>
+                <a href="#">Editor's Pick</a>
+                <a href="#">Fashion Finds</a>
+                <a href="#">Most Hearted Styles</a>
+                <a href="#">Shopbop Exclusives</a>
+                <a href="#">Top Sellers</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>SHOP BY OCCASION</p>
+                <a href="#">Best-Dressed Guest</a>
+                <a href="#">Daytime Drama</a>
+                <a href="#">New 9-To-5</a>
+                <a href="#">The Dress Shop</a>
+                <a href="#">Vacation Wardrobe</a>
+                <a href="#">Wedding Shop</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_ourfavorites_slot1_topsellers.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Top Sellers</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2021/2021_07/sb_20210719_desktop_ourfavorites_slot2_mosthearted.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Most-Hearted Styles</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_ourfavorites_slot3_vacation.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Vacation Wardrobe</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>DESIGNERS</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>NAMES TO KNOW</p>
+                <a href="#">La Double J</a>
+                <a href="#">GANNI</a>
+                <a href="#">Nanuska</a>
+                <a href="#">STAUD</a>
+                <a href="#">STAND STUDIO</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>TOP DESIGNERS</p>
+                <a href="#">AGOLDE</a>
+                <a href="#">Golden Goose</a>
+                <a href="#">Nanuska</a>
+                <a href="#">STAUD</a>
+                <a href="#">STAND STUDIO</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_05/sb_20220502_desktop_designers_slot1_NiliLotan.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Polisehd Pieces: Nili Lotan</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_designers_slot2_cultgaia.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Just Beachy: Cult Gaia</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>CLOTHING</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>CLOTHING</p>
+                <a href="#">Activewear</a>
+                <a href="#">Coats</a>
+                <a href="#">Dresses</a>
+                <a href="#">Jackets</a>
+                <a href="#">Jeans</a>
+                <a href="#">Pants</a>
+                <a href="#">Shorts</a>
+                <a href="#">Skirts</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Tops</a>
+                <a href="#">All Clothing</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>NAMES TO KNOW</p>
+                <a href="#">AGOLDE</a>
+                <a href="#">Levi's</a>
+                <a href="#">MOTHER</a>
+                <a href="#">Sea</a>
+                <a href="#">Vince</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>DISCOVER</p>
+                <a href="#">Most Hearted Styles</a>
+                <a href="#">Black Designers</a>
+                <a href="#">Designer Boutique</a>
+                <a href="#">Editor's Pick</a>
+                <a href="#">Extended Sizes</a>
+                <a href="#">Fashion Finds</a>
+                <a href="#">Top Sellers</a>
+                <p className={styles.dropHeadings}>SHOP BY OCCASION</p>
+                <a href="#">Best-Dressed Guest</a>
+                <a href="#">New 9-To-5</a>
+                <a href="#">Polished Pieces</a>
+                <a href="#">The Dress Shop</a>
+                <a href="#">Vacation Wardrobe</a>
+                <a href="#">Wedding Shop</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_05/sb_20220502_desktop_clothing_slot1_EnglishFactory.jpg" alt=""/>
+                <p className={styles.dropHeadings}>New From English Factory</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_clothing_slot2_oneshoulder.jpg" alt=""/>
+                <p className={styles.dropHeadings}>One Shoulder Dresses</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>ACTIVE</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>CLOTHING</p>
+                <a href="#">Dresses & Jumpsuits</a>
+                <a href="#">Leggings</a>
+                <a href="#">Matching Sets</a>
+                <a href="#">Shorts & Skirts</a>
+                <a href="#">Sport Bras</a>
+                <a href="#">Sweatpants</a>
+                <a href="#">Tops</a>
+                <a href="#">Sweatshirts</a>
+                <a href="#">All Clothing</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>ACCESSORIES</p>
+                <a href="#">Active Accessories</a>
+                <a href="#">Bags</a>
+                <a href="#">Sneakers</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>NAMES TO KNOW</p>
+                <a href="#">Alo Yoga</a>
+                <a href="#">Beyond Yoga</a>
+                <a href="#">Girlfriend Collective</a>
+                <a href="#">Sweaty Betty</a>
+                <a href="#">Year of Ours</a>
+                <p className={styles.dropHeadings}>DISCOVER</p>
+                <a href="#">24/7 Active</a>
+                <a href="#">Ski</a>
+                <a href="#">Sport</a>
+                <a href="#">Tennis</a>
+                <a href="#">Yoga & Lounge</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_active_slot1_tennis.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Tennis Essentials</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_active_slot2_accessories.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Gear Up: Active Staples</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>SHOES</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>SHOES</p>
+                <a href="#">Boots</a>
+                <a href="#">Espadrilles</a>
+                <a href="#">Flats</a>
+                <a href="#">Mules & Slides</a>
+                <a href="#">Pumps</a>
+                <a href="#">Rain Boots</a>
+                <a href="#">Sandals</a>
+                <a href="#">Sneakers</a>
+                <a href="#">All Shoes</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>NAMES TO KNOW</p>
+                <a href="#">Gia Borghini</a>
+                <a href="#">Golden Goose</a>
+                <a href="#">Kahmune</a>
+                <a href="#">Larroude</a>
+                <a href="#">On</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>DISCOVER</p>
+                <a href="#">Designer Boutique</a>
+                <a href="#">Evening-Ready Shoes</a>
+                <a href="#">Wedding Shoes</a>
+                <p className={styles.dropHeadings}>TRENDS</p>
+                <a href="#">Cool Clogs</a>
+                <a href="#">Neutral Tones</a>
+                <a href="#">Puffed-Up Pairs</a>
+                <a href="#">Strappy Sandals</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_05/sb_20220502_desktop_shoes_slot1_BadgleyMishka.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Step into Badgley Mischka</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_05/sb_20220502_desktop_shoes_slot2_Soludos.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Lace up in Soludos</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>BAGS</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>BAGS</p>
+                <a href="#">Backpacks</a>
+                <a href="#">Beach Bags</a>
+                <a href="#">Belt Bags</a>
+                <a href="#">Bucket Bags</a>
+                <a href="#">Clutches</a>
+                <a href="#">Cross Body Bags</a>
+                <a href="#">Luggage</a>
+                <a href="#">Mini Bags</a>
+                <a href="#">Satchels</a>
+                <a href="#">Shoulder Bags</a>
+                <a href="#">Totes</a>
+                <a href="#">Wallet</a>
+                <a href="#">Bag Accessories</a>
+                <a href="#">All Bags</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>NAMES TO KNOW</p>
+                <a href="#">Clare V.</a>
+                <a href="#">JW Anderson</a>
+                <a href="#">Marc Jacobs</a>
+                <a href="#">STAUD</a>
+                <a href="#">Tory Burch</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>DISCOVER</p>
+                <a href="#">Designer Boutique</a>
+                <a href="#">Vintage Bags</a>
+                <p className={styles.dropHeadings}>TRENDS</p>
+                <a href="#">Cool Crochet</a>
+                <a href="#">Neutral Tones</a>
+                <a href="#">Night-Out Bags</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_05/sb_20220502_desktop_bags_slot1_ReeProjects.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Spotlight On: Ree Projects</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_bags_slot2_bucketbags.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Bring-it-All Bucket Bags</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>ACCESSORIES</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>ACCESSORIES</p>
+                <a href="#">Active Accessories</a>
+                <a href="#">Belts</a>
+                <a href="#">Gloves</a>
+                <a href="#">Hair Accessories</a>
+                <a href="#">Hats</a>
+                <a href="#">Home</a>
+                <a href="#">Scarves</a>
+                <a href="#">Socks</a>
+                <a href="#">Sunglasses</a>
+                <a href="#">Travel Accessories</a>
+                <a href="#">All Accessories</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>JEWELERY</p>
+                <a href="#">Fine Jewelery</a>
+                <a href="#">Anklets</a>
+                <a href="#">Bracelets</a>
+                <a href="#">Earrings</a>
+                <a href="#">Necklaces</a>
+                <a href="#">Rings</a>
+                <a href="#">Watches</a>
+                <a href="#">All Jewelery</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>DISCOVER</p>
+                <a href="#">Designer Boutique</a>
+                <a href="#">Home Decor</a>
+                <a href="#">Wedding Accessories</a>
+                <p className={styles.dropHeadings}>TRENDS</p>
+                <a href="#">Crafty Accents</a>
+                <a href="#">Metal Jewelery</a>
+                <a href="#">Statement Pieces</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_05/sb_20220502_desktop_accessories_slot1_HatAttack.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Top it Off: Hat Attack</p>
+                <a href="">Shop Now</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_accessories_slot2_baseball.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Home Run Hats</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.dropdown}>
+          <p className={styles.dropbtn}>MEN</p>
+          <div className={styles.dropdownContent}>
+            <div className={styles.dropdownFlex}>
+              <div>
+                <p className={styles.dropHeadings}>MEN</p>
+                <a href="#">Clothing</a>
+                <a href="#">Shoes</a>
+                <a href="#">Bags</a>
+                <a href="#">Accessories</a>
+                <a href="#">Sale</a>
+                <a href="#">Shop All</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>FEATURED DESIGNERS</p>
+                <a href="#">AMI</a>
+                <a href="#">Isabel Marant</a>
+                <a href="#">Maison Kitsune</a>
+                <a href="#">Polo Ralph Lauren</a>
+                <a href="#">Veja</a>
+                <a href="#">Vince</a>
+              </div>
+              <div>
+                <p className={styles.dropHeadings}>DISCOVER</p>
+                <a href="#">What's New</a>
+                <a href="#">Top Sellers</a>
+                <a href="#">The Basics</a>
+                <a href="#">Explore the Latest</a>
+              </div>
+              <div className={styles.menuCta}>
+                <img src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_men_slot1_freedommoses.jpg" alt=""/>
+                <p className={styles.dropHeadings}>Slide Into: Freedom Moses</p>
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default MegaMenu;
