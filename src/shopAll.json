@@ -1,0 +1,415 @@
+{
+  "shopAll": [
+    {
+      "id": 1,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/farmr/farmr304431d238/farmr304431d238_1651186495176_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "FARM Rio",
+      "title": "Tropical Graphic Maxi Dress",
+      "price": 20276.48
+    },
+    {
+      "id": 2,
+      "gender": "women",
+      "category": "shoes",
+      "subcategory": "sandals",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ccons/ccons3068210417/ccons3068210417_1651237456883_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "CAROLINE CONSTAS",
+      "title": "Jane Sandals",
+      "price": 727545.4
+    },
+    {
+      "id": 3,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "sweaters",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ragbo/ragbo4595474319/ragbo4595474319_1651171577414_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Rag&Bone",
+      "title": "Renee Novelty Sweater",
+      "price": 728693.12
+    },
+    {
+      "id": 4,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "jeans",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/leviv/leviv209611e65f/leviv209611e65f_1651163973211_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Levi's",
+      "title": "Ribcage Straight Ankle Jeans",
+      "price": 78263.62
+    },
+    {
+      "id": 5,
+      "gender": "women",
+      "category": "jewelery",
+      "subcategory": "necklaces",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/luvaj/luvaj4043911739/luvaj4043911739_1651174551868_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Luv Aj",
+      "title": "The Architectural Statement Hoops",
+      "price": 7268.92
+    },
+    {
+      "id": 6,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/tachc/tachc3003211365/tachc3003211365_1651246386774_2-0._UX357_QL90_.jpg",
+      "brand": "Tach Clothing",
+      "title": "Maribel Dress",
+      "price": 15685.58
+    },
+    {
+      "id": 7,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/phlii/phlii2433230884/phlii2433230884_1651166377845_2-0._UX357_QL90_.jpg",
+      "brand": "3.1 Phillip Lim ",
+      "title": "Plisse Voile Shirred Tank",
+      "price": 30223.42
+    },
+    {
+      "id": 8,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "skirts",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/phlii/phlii2433830884/phlii2433830884_1651174059411_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
+      "brand": "3.1 Phillip Lim",
+      "title": "Plisse Voile Petal Drape Skirt",
+      "price": 749734.75
+    },
+    {
+      "id": 9,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/lnaaa/lnaaa4100911779/lnaaa4100911779_1651166289954_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "LNA",
+      "title": "Ribbed Scoop Tank",
+      "price": 5049.99
+    },
+    {
+      "id": 10,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "skirts",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/seven/seven420391df2d/seven420391df2d_1651172288537_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "7 For All Mankind",
+      "title": "Mini Skirt",
+      "price": 13619.67
+    },
+    {
+      "id": 11,
+      "gender": "women",
+      "category": "accessories",
+      "subcategory": "satchels",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/byfar/byfar304701a529/byfar304701a529_1651178750547_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "BY FAR",
+      "title": "Amira Bag",
+      "price": 43613.55
+    },
+    {
+      "id": 12,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/azeez/azeez301121c925/azeez301121c925_1651178666807_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
+      "brand": "Azeeza",
+      "title": "Ollie Mi Dress",
+      "price": 137344.42
+    },
+    {
+      "id": 13,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ragbo/ragbo4595674319/ragbo4595674319_1651171579613_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Rag & Bone Renee Long Dress ₹34,431.75",
+      "title": "Renee Long Dress",
+      "price": 34431.75
+    },
+    {
+      "id": 14,
+      "gender": "women",
+      "category": "shoes",
+      "subcategory": "sandals",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mluca/mluca30030169e1/mluca30030169e1_1651172276875_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
+      "brand": "Maria Luca",
+      "title": "Duilia Sandals",
+      "price": 40170.38
+    },
+    {
+      "id": 15,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "shorts",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/alema/alema3002310099/alema3002310099_1651159605526_2-0._UY0_QL90_.jpg",
+      "brand": "Alemais",
+      "title": " Sunset Shades Shorts",
+      "price": 18746.18
+    },
+    {
+      "id": 16,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/awake/awake302491c925/awake302491c925_1651244256172_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
+      "brand": "A.W.A.K.E MODE",
+      "title": "Ribbed Jersey Top",
+      "price": 13390.12
+    },
+    {
+      "id": 17,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "shorts",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/seven/seven419161cf6c/seven419161cf6c_1651087919123_2-0._UY0_QL90_.jpg",
+      "brand": "7 For All Mankind ",
+      "title": "Easy James Denim Shorts ",
+      "price": 12089.37
+    },
+    {
+      "id": 18,
+      "gender": "women",
+      "category": "accessories",
+      "subcategory": "satchels",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/byfar/byfar304621cd2d/byfar304621cd2d_1651246376424_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "BY FAR",
+      "title": "Dora Bag",
+      "price": 40859.01
+    },
+    {
+      "id": 19,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/rgett/rgett3015512744/rgett3015512744_1651175407372_2-0._UY0_QL90_.jpg",
+      "brand": "Rosetta Getty",
+      "title": "Twist Front Slip Dress",
+      "price": 68098.35
+    },
+    {
+      "id": 20,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/phlii/phlii243721071b/phlii243721071b_1651189492012_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
+      "brand": "3.1 Phillip Lim",
+      "title": "Flamenco T-Shirt Dress",
+      "price": 34431.75
+    },
+    {
+      "id": 21,
+      "gender": "women",
+      "category": "shoes",
+      "subcategory": "flats",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/defin/defin3003911de9/defin3003911de9_1651076828936_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Definery",
+      "title": "Loop Thong Footbed",
+      "price": 26780.25
+    },
+    {
+      "id": 22,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/tachc/tachc30038102cb/tachc30038102cb_1651244252215_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Tach Clothing",
+      "title": "Clarissa Top",
+      "price": 10406.04
+    },
+    {
+      "id": 23,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "skirts",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/lgenc/lgenc3147358139/lgenc3147358139_1651079308597_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "L'AGENCE",
+      "title": "Jolene Denim Miniskirt",
+      "price": 20276.48
+    },
+    {
+      "id": 24,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ayrrr/ayrrr3033410999/ayrrr3033410999_1651162430607_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "AYR",
+      "title": "The French Fry Tee",
+      "price": 5738.62
+    },
+    {
+      "id": 25,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "shorts",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mouss/mouss30204102ca/mouss30204102ca_1651067771151_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "MOUSSY VINTAGE",
+      "title": "Montclair Shorts",
+      "price": 17215.88
+    },
+    {
+      "id": 26,
+      "gender": "women",
+      "category": "jewelery",
+      "subcategory": "earrings",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/deepa/deepa4086911de9/deepa4086911de9_1651249379662_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Deepa Gurnani",
+      "title": "Deepa by Deepa Gurnani Britt Earrings",
+      "price": 4590.9
+    },
+    {
+      "id": 27,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/tachc/tachc300351a530/tachc300351a530_1651251405877_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Tach Clothing",
+      "title": "Georgette Dress",
+      "price": 17598.45
+    },
+    {
+      "id": 28,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/sundr/sundr3207846477/sundr3207846477_1651092437203_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "SUNDRY",
+      "title": "Keyhole Ruched Dress",
+      "price": 14384.82
+    },
+    {
+      "id": 29,
+      "gender": "women",
+      "category": "jewelery",
+      "subcategory": "necklaces",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/madew/madew4564219593/madew4564219593_1651182188147_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Madewell",
+      "title": "Necklace Layering Pack",
+      "price": 3672.72
+    },
+    {
+      "id": 30,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/bashh/bashh3034967004/bashh3034967004_1651159594360_2-0._UY0_QL90_.jpg",
+      "brand": "ba&sh",
+      "title": "Vlad Shirt",
+      "price": 18746.18
+    },
+    {
+      "id": 31,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "jeans",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/frame/frame3189317141/frame3189317141_1636470769955_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "FRAME",
+      "title": "Le Sylvie Jeans",
+      "price": 17445.42
+    },
+    {
+      "id": 32,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/sundr/sundr320801cd2d/sundr320801cd2d_1651091376671_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "SUNDRY",
+      "title": "Asymmetrical Strap Cami",
+      "price": 5203.02
+    },
+    {
+      "id": 33,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "skirts",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/awake/awake302581c925/awake302581c925_1651246370925_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
+      "brand": "A.W.A.K.E MODE",
+      "title": "onstructed Shirt Skirt",
+      "price": 55473.38
+    },
+    {
+      "id": 34,
+      "gender": "women",
+      "category": "shoes",
+      "subcategory": "flats",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ikkii/ikkii300461c925/ikkii300461c925_1651164823018_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Inuikii",
+      "title": "Raffia Moon Platforms",
+      "price": 23337.08
+    },
+    {
+      "id": 35,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/tachc/tachc30037154bf/tachc30037154bf_1651246441590_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Tach Clothing",
+      "title": "Amelie Dress",
+      "price": 15685.58
+    },
+    {
+      "id": 36,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "dress",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ttayl/ttayl305101dfab/ttayl305101dfab_1651091421644_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Tanya Taylor",
+      "title": "Allora Dress",
+      "price": 41700.68
+    },
+    {
+      "id": 37,
+      "gender": "women",
+      "category": "jewelery",
+      "subcategory": "necklaces",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/luvaj/luvaj4044911739/luvaj4044911739_1651171522878_2-0._UY0_QL90_.jpg",
+      "brand": "Luv Aj The Rged Pyram Hoops",
+      "title": "The Rged Pyram Hoops",
+      "price": 6503.78
+    },
+    {
+      "id": 38,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "jeans",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/vbeac/vbeac303991bd97/vbeac303991bd97_1651175413601_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "Veronica Beard Jeans",
+      "title": "Adrianna Top",
+      "price": 15149.97
+    },
+    {
+      "id": 39,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "jeans",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/seven/seven4193013799/seven4193013799_1643929374341_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "7 For All Mankind",
+      "title": "Dojo We Leg Jeans",
+      "price": 17445.42
+    },
+    {
+      "id": 40,
+      "gender": "women",
+      "category": "clothing",
+      "subcategory": "tops",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/anine/anine3073010d92/anine3073010d92_1651093367671_2-0._SH20_QL90_UY365_.jpg",
+      "brand": "ANINE BING",
+      "title": " Lili Biker Tee",
+      "price": 7574.98
+    },
+    {
+      "id": 41,
+      "gender": "women",
+      "category": "jewelery",
+      "subcategory": "earrings",
+      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/jande/jande303911cc6b/jande303911cc6b_1651174032304_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
+      "brand": "JW Anderson",
+      "title": "Oversized Link Chain Earrings with Crystal",
+      "price": 37109.78
+    }
+  ]
+}
+

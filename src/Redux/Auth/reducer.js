@@ -3,6 +3,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT } from "./actionTypes";
 
 const initState={
     isAuth:false,
+    userDetails:{}
 }
 
 const AuthReducer =(state=initState, {type,payload})=>{

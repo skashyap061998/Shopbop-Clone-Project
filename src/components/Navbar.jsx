@@ -33,7 +33,7 @@ const Navbar = () => {
           />
         </div>
         <MegaMenu/>
-      </div>
+      </div> 
     </>
   );
 };

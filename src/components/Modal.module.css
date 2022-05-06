@@ -1,0 +1,96 @@
+.backdrop{
+    width:100vw;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.5);
+    position:fixed;
+    z-index:2000;
+    top:0;
+    right:0;
+    animation-name: backdrop;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in 0.5s;
+}
+
+@keyframes backdrop {
+  0%   {width: 0vw;}
+  100% {width: 100vw;}
+}
+
+.modal{
+    width:40vw;
+    height:100vh;
+    background:white;
+    position:fixed;
+    z-index:3000;
+    top:0;
+    right:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius: 0.5rem 0 0 0;
+    animation-name: modal;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in 0.5s;
+}
+
+@keyframes modal {
+  0%   {width: 0vw;}
+  100% {width: 40vw;}
+}
+
+.header{
+    border-radius: 0.5rem 0 0 0;
+    background:#F8F6F7;
+    width:100%;
+    display:grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    gap:1vw;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+
+.header > div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.genTab {
+    margin:0.5vh 2vw;
+    padding-bottom:0.8vh;
+    border-bottom:2px solid transparent;
+}
+
+.genTab:hover {
+    font-weight: 700;
+    border-bottom:2px solid #ee4a1b;
+}
+
+.activeTab{
+    font-weight: 700;
+    border-bottom:2px solid #ee4a1b;
+}
+
+.input{
+    position:relative;
+    margin: 5vw auto;
+    width:60%;
+}
+
+.input > span{
+    position:absolute;
+    left: 13%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.input > input{
+    padding:0.8vw 3vw;
+    outline:none;
+    font-size: 1.2vw;
+    border: 2px solid #c3c3c3;
+}

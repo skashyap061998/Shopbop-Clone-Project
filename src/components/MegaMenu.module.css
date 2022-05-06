@@ -3,8 +3,9 @@
   width: 80%;
   margin: auto;
   display: flex;
-  gap: 0.5vw;
+  gap: 1vw;
   justify-content: center;
+  align-items: center;
   position: relative;
   margin-bottom:1vh;
 }
