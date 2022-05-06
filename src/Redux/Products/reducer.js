@@ -6,6 +6,9 @@ const initState = {
     isError: false,
     filterData: [],
     products: [],
+    product:[],
+    cartData:[],
+    data:[]
   };
   
   const ProdReducer = (state = initState, { type, payload }) => {

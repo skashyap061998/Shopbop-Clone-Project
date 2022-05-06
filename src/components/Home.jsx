@@ -4,8 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import styles from "./Home.module.css";
 import SliderItem from "./SliderItem";
-import Data from "../slider.json"; 
-
+import Data from "../slider.json";
 
 
 function NextArrow(props) {

@@ -16,6 +16,10 @@ const MegaMenu = () => {
   const [hover8, setHover8] = useState(false);
   const [hover9, setHover9] = useState(false);
 
+  show
+    ? (document.querySelector("body").style.overflow = "hidden")
+    : (document.querySelector("body").style.overflow = "");
+
   return (
     <>
       <div className={styles.drop}>
@@ -536,7 +540,7 @@ const MegaMenu = () => {
           </div>
         </div>
         <div className={styles.dropdown}>
-          <span onClick={() => setShow(true)}>
+          <span onClick={() => {setShow(true);}}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

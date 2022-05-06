@@ -1,0 +1,177 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  background-color: #f6f4f5;
+} */
+.signIn {
+  width: 310px;
+  max-width: 100%;
+  margin: auto;
+}
+.signInTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.signInForm h3 {
+  font-size: 28px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.signInForm label {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+}
+.signInForm input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border: 1px solid grey;
+}
+.signInForm input:focus {
+  outline: none;
+  border: 1px solid #ee4c31;
+}
+.forgotPassword {
+  display: flex;
+  justify-content: space-between;
+}
+.forgotPassword a {
+  width: 100%;
+  margin-right: 0;
+  text-align: right;
+  text-decoration: none;
+  color: red;
+}
+.signInForm button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background-color: #ee4c31;
+  color: white;
+}
+.signInCheckbox {
+  position: relative;
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.signInCheckbox p a {
+  text-decoration: none;
+  color: #ee4c31;
+}
+.signInCheckbox input {
+  margin-right: 5px;
+}
+.arrow {
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 3px;
+  color: grey;
+}
+
+.signInPopup {
+  position: absolute;
+  display: none;
+  bottom: 100%;
+  width: 440px;
+  left: -15%;
+  border: 1px solid grey;
+  background-color: white;
+}
+.signInPopup h6 {
+  display: flex;
+  margin: 0;
+  padding: 10px 9px;
+  font-size: 13px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  /* padding: 10px 0; */
+  background-color: #f6f4f5;
+}
+.signInPopup h6 a {
+  margin-right: 10px;
+  color: black;
+}
+.signInPopupContent {
+  padding: 14px 18px;
+}
+.signInPopupContent p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.moreSignInOptions {
+  text-align: center;
+}
+.moreSignInOptions p {
+  position: relative;
+  color: grey;
+  font-size: 12px;
+}
+.moreSignInOptions p::after {
+  content: " ";
+  position: absolute;
+  width: 88px;
+  height: 1px;
+  background-color: lightgray;
+  left: 0;
+  top: 50%;
+}
+.moreSignInOptions p::before {
+  content: " ";
+  position: absolute;
+  width: 88px;
+  height: 1px;
+  background-color: lightgray;
+  top: 50%;
+  right: 0;
+}
+
+.amazonBtn {
+  width: 70%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding: 7px;
+  font-weight: 400;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.amazonBtn a {
+  text-decoration: none;
+  color: black;
+}
+
+.amazonBtn a i {
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+.registerBtn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 7px 0;
+}
+
+.signInPopup.active {
+  display: block;
+}
