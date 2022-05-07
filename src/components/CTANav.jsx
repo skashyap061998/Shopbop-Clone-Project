@@ -1,7 +1,13 @@
 import React from 'react'
 import styles from './CTANav.module.css';
+import { useSelector, useDispatch } from 'react-redux';
+import {logout} from '../Redux/Auth/action';
+
 
 const CTANav = () => {
+  const token = useSelector(state => state.auth.token);
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.ctaContainer}>
       <div className={styles.dropdowns}>
@@ -31,7 +37,7 @@ const CTANav = () => {
         eligible
       </div>
       <div className={styles.cta}>
-        <p>SignIn / Register</p>
+        {!token?<p>SignIn / Register</p>:<p onClick={()=> dispatch(logout())}>SignOut</p>}
         <p className={styles.wishlist}>
           <img
             src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/_global/images/topnav/rebrand-hearts_1-0.png"

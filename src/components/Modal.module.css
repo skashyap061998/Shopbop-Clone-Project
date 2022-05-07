@@ -90,7 +90,12 @@
 
 .input > input{
     padding:0.8vw 3vw;
+    border-radius: 0.25rem;
     outline:none;
     font-size: 1.2vw;
     border: 2px solid #c3c3c3;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
 }

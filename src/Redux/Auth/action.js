@@ -1,16 +1,17 @@
 import {LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT} from './actionTypes';
 
-export const loginSuccess = () =>{
+
+export const loginSuccess = (payload) =>{
     return{
         type:LOGIN_SUCCESS,
-        payload:true,
+        payload,
     }
 }
 
-export const loginFailure = () =>{
+export const loginFailure = (payload) =>{
     return{
         type:LOGIN_FAILURE,
-        payload:false,
+        payload,
     }
 }
 

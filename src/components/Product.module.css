@@ -1,0 +1,115 @@
+.container {
+  width:60%;
+  margin:2vw auto;
+  display:grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows:80vh;
+  gap:2vw;
+}
+
+.product{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub{
+  height:80%;
+}
+
+.pinterest{
+  height:10%;
+  width:30%;
+  display: flex;
+  justify-content: center;
+}
+
+.pinterest img{
+  width:50%;
+  height:50%;
+  object-fit: contain;
+}
+
+.product_main{
+  width:100%;
+  height:100%;
+}
+
+.product_main > img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.product_details{
+  padding:0 3vw;
+}
+
+.head{
+  font-weight:700;
+  font-size:1.25rem;
+  margin:0.5rem 0;
+}
+
+.title{
+  font-size:0.95rem;
+  margin:0.5rem 0;
+  line-height:1;
+}
+
+.price{
+  font-size:0.95rem;
+  font-weight:700;
+  margin:1rem 0;
+}
+
+.info{
+  padding-bottom:1rem;
+}
+
+.product_details ul{
+  padding:1vh 1rem;
+  font-size:0.95rem;
+}
+
+.product_details button{
+  display:block;
+  width:100%;
+  font-size:0.975rem;
+  height:3rem;
+  font-weight: 600;
+  margin:1rem 0;
+}
+
+.bag{
+  color:white;
+  background:#ee4a1b;
+  border:none;
+}
+
+.wishlist{
+  background:white;
+  border:1px solid #b3b3b3;
+}
+
+.caraousel{
+  width:40%;
+  margin:10vw auto;
+}
+
+.caraouselInfo > p{
+    line-height:1.4;
+    font-size:1vw;
+    margin:0;
+    font-weight: 600;
+}
+
+.caraouselInfo > p:nth-child(2) {
+    font-size:2vw;
+    font-weight: 900;
+}
+
+
+
+

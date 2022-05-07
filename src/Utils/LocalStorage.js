@@ -1,6 +1,5 @@
 export const saveToLocal = (key, value) => {
-  if(typeof value === 'string')   localStorage.setItem(key,value);
-  else localStorage.setItem(key, JSON.stringify(value));
+  localStorage.setItem(key, JSON.stringify(value));
   console.log(`${value} Added To Local Storage`);
 };
 

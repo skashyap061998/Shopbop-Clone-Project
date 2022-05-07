@@ -8,7 +8,7 @@ const Modal = ({ show, setShow }) => {
     const [men, setMen] = useState(false);
 
   //   const [search, setSearch] = useState("");
-    console.log(gender.current);
+    // console.log(gender.current);
 
 
   const handleClose = () => setShow(false);
