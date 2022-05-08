@@ -2,11 +2,12 @@ import React from 'react'
 import styles from './CTANav.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import {logout} from '../Redux/Auth/action';
-
+import {useNavigate} from 'react-router-dom';
 
 const CTANav = () => {
   const token = useSelector(state => state.auth.token);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   return (
     <div className={styles.ctaContainer}>
@@ -44,7 +45,7 @@ const CTANav = () => {
             alt="Wishlist"
           />
         </p>
-        <p className={styles.cart}>
+        <p className={styles.cart} onClick={()=> navigate('/cart')}>
           <img
             src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/_global/images/topnav/bag_1-0.png"
             alt="Cart"

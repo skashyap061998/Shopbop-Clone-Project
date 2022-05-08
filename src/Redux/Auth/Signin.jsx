@@ -1,17 +1,30 @@
 import React from "react";
 import styles from "./Signin.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { loadFromLocal } from "../../Utils/LocalStorage";
 import { loginSuccess, loginFailure } from "../Auth/action";
 import { nanoid } from "nanoid";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Signin() {
-  const dispatch = useDispatch();
-
+  const token = useSelector((state) => state.auth.token);
+  
   const [formData, setFormData] = React.useState({});
   const form = React.useRef();
   const [invalid, setInvalid] = React.useState(false);
+
   let localData = loadFromLocal("userData") || [];
+  const dispatch = useDispatch();
+  let navigate = useNavigate();
+  let location = useLocation();
+
+  let from = location?.state?.from?.pathname || "/cart";
+
+  React.useEffect(() => {
+    if (token) {
+      navigate(from, { replace: true });
+    }
+  }, [token]);
 
   const checkValidity = (email, password) => {
     let flag = false;
@@ -131,9 +144,7 @@ function Signin() {
 
           <div className={styles.moreSignInOptions}>
             <p>More Sign in Options</p>
-            <button className={styles.amazonBtn}>
-                Login with Amazon
-            </button>
+            <button className={styles.amazonBtn}>Login with Amazon</button>
             <p>New to shopbop?</p>
             <button className={styles.registerBtn}>
               Create your Shopbop account
