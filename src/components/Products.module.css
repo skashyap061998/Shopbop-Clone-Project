@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .grid {
+    max-width: 65%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 2px solid red; */
+    margin-top: 0.5rem;
+    gap: 1rem;
+  }
+  .grid > div {
+    /* border: 1px solid green; */
+    height: 70vh;
+    width: 100%;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .text {
+    font-weight: 700;
+  }
+  .image {
+    height: 80%;
+    width: 100%;
+  }
+  .image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+  }
+  .sec {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .paginationBttns a {
+    padding: 8px;
+    margin: 5px;
+    color: gray;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+  }
+  .paginationBttns a:hover {
+    font-weight: bold;
+  }
+  .paginationActive a {
+    color: black;
+  }
+  /* pagination */
+  .paginate {
+    /* border: 2px solid red; */
+    width: 65%;
+    margin: auto;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_paginate {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+    font-size:0.8rem;
+  }
+  
+  .right_paginate {
+    /* border: 1px solid blue; */
+  }
+  .left_paginate > #item {
+    border-right: 2px solid black;
+    padding: 3px 10px;
+  }
+  
+  /* //sortin gdiv */
+  
+  .menTop {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 65%;
+    height: 7vh;
+    /* border: 1px solid blue; */
+    align-items: center;
+    margin-top:2rem;
+  }
+  .menTop div:first-child {
+    display: flex;
+    gap: 30px;
+  }
+  
+  * {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  #desiner {
+    display: inline-block;
+    overflow: visible;
+  }
+  #clear {
+    font-size: 11px;
+    color: #000;
+    margin-top: 5px;
+  }
+  #filter {
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+  
+  #sort {
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 5px;
+  }
+  select {
+    font-size: 11px;
+    border: none;
+  }
+  
+  #topleft {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #headerDiv {
+    display: flex;
+  }
+  #sideBar > p{
+    text-align: left;
+    margin-left: 80px;
+  }

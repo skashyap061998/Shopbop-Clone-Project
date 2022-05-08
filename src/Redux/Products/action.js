@@ -1,4 +1,11 @@
-import { IS_LOADING, IS_FAILURE, SORT_DATA, FILTER_DATA } from "./actionTypes";
+import { GET_DATA, IS_LOADING, IS_FAILURE, SORT_DATA, FILTER_DATA } from "./actionTypes";
+import data from '../../mainData.json';
+
+export const getData = (data) => ({
+    type: GET_DATA,
+    payload:data,
+});
+
 export const isLoading = () => ({
     type: IS_LOADING,
 });  

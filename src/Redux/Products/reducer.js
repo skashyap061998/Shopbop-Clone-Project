@@ -1,4 +1,4 @@
-import { IS_LOADING, IS_FAILURE, SORT_DATA, FILTER_DATA } from "./actionTypes";
+import { GET_DATA, IS_LOADING, IS_FAILURE, SORT_DATA, FILTER_DATA } from "./actionTypes";
 
 
 const initState = {
@@ -13,6 +13,13 @@ const initState = {
   
   const ProdReducer = (state = initState, { type, payload }) => {
     switch (type) {
+      case GET_DATA:
+        return {
+          ...state,
+          isLoading:false,
+          isError:false,
+          products: payload,
+        }
       case IS_LOADING:
         return {
           ...state,
@@ -27,26 +34,27 @@ const initState = {
         };
       
       case SORT_DATA:
+        let sortedData;
+        
+        if(payload === 'lth') sortedData = state.products.sort((a,b) => parseInt(a.price) - parseInt(b.price));
+        else sortedData = sortedData = state.products.sort((a,b) => parseInt(b.price) - parseInt(a.price));
+       
         return {
           ...state,
           isLoading: false,
           isError: false,
-          products: state.products.sort((a, b) => {
-            if (payload === "ascending") {
-              return a.price - b.price;
-            } else {
-              return b.price - a.price;
-            }
-          }),
+          products: [...sortedData],
         };
       case FILTER_DATA:
+        let filtered = state.products.filter((item) => {
+          return item.category === payload || item.subcategory === payload || item.title === payload || item.gender === payload;
+        });
+
         return {
           ...state,
           isLoading: false,
           isError: false,
-          filterData: state.products.filter((item) => {
-            return item.category === payload;
-          }),
+          products: [...filtered],
         };
       default:
         return state;
