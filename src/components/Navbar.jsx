@@ -8,8 +8,14 @@ const Navbar = () => {
   const location = useLocation();
   const curLoc = useRef(false);
   
-  if(location.pathname.includes("signin") || location.pathname.includes("register")){
-    curLoc.current = true; 
+  if (
+    location.pathname.includes("signin") ||
+    location.pathname.includes("register") ||
+    location.pathname.includes("payment") ||
+    location.pathname.includes("cart") ||
+    location.pathname.includes("ordersuccess")
+  ) {
+    curLoc.current = true;
   }
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);

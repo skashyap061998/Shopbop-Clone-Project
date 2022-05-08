@@ -6,6 +6,7 @@
     align-items: center;
     padding: 1vw 0;
     background:#F8F6F7;
+    user-select: none;
 }
 
 .dropdowns{

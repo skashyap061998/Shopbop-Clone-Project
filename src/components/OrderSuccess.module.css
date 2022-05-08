@@ -1,0 +1,50 @@
+.successContainer{
+    width:40%;
+    height:80vh;
+    margin:2rem auto 5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    background:#F8F6F7;
+}
+.heading{
+    font-size:2rem;
+
+}
+
+.success{
+    height:8rem;
+    width:8rem;
+}
+
+.success > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.info{
+    font-size:2rem;
+    text-align: center;
+}
+
+.info > .orderid{
+    font-size:1.5rem;
+}
+
+.info > button{
+    padding:0.5rem;
+    height:4rem;
+    width:80%;
+    background:#ee4a1b;
+}
+
+.info > button > a{
+    text-decoration:none;
+    padding:0.5rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    color:white;
+    font-weight: 600;
+}
