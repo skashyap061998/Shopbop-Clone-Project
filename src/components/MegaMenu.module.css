@@ -21,6 +21,7 @@
   border-bottom:2px solid transparent;
   margin: auto;
   font-weight: 400;
+  cursor:pointer;
   transition:font-weight ease-out 0.1s;
   -webkit-transition:font-weight ease-out 0.1s;
   -moz-transition:font-weight ease-out 0.1s;

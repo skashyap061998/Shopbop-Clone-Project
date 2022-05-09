@@ -1,12 +1,16 @@
 import React from "react";
 import styles from "./Payment.module.css";
 import { Link, useNavigate } from "react-router-dom";
+import { loadFromLocal } from '../Utils/LocalStorage';
 
 const Payment = () => {
   const [openAdd, setOpenAdd] = React.useState(false);
   const [openCard, setOpenCard] = React.useState(false);
 
   const [success, setSuccess]= React.useState(false);
+
+  const subTotal = loadFromLocal('subSaved');
+  const cartCount = loadFromLocal('cartCount');
 
   const navigate = useNavigate();
   
@@ -153,8 +157,8 @@ const Payment = () => {
           </div>
           <div className={styles.orderDetails_card}>
             <div className={styles.details_info}>
-              <p>Products</p>
-              <p>₹3851</p>
+              <p>Products({cartCount})</p>
+              <p>₹{subTotal}</p>
             </div>
             <div className={styles.details_info}>
               <p>Shipping & Handling</p>
@@ -165,7 +169,7 @@ const Payment = () => {
               style={{ borderBottom: "1px solid black" }}
             >
               <p>Total Before Tax</p>
-              <p>₹3851</p>
+              <p>₹{subTotal}</p>
             </div>
             <div
               className={styles.details_info}
@@ -176,7 +180,7 @@ const Payment = () => {
               }}
             >
               <p>Order Total</p>
-              <p>₹{3851+150}</p>
+              <p>₹{subTotal+150}</p>
             </div>
           </div>
         </div>

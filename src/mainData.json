@@ -331,17 +331,6 @@
       "desc": "Fabric: Lightweight, non-stretch charmeuse - Colorblock floral print - 3/4 puff sleeves with button cuffs - Hand wash or dry clean - Shell: 100% polyester - Unlined"
     },
     {
-      "id": 71,
-      "gender": "women",
-      "category": "clothing",
-      "subcategory": "dress",
-      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/berna/berna30007192f2/berna30007192f2_1650048139171_2-0._SH20_QL90_UY365_PGshopbop-db-sticker-3_UY365_.jpg",
-      "brand": "Bernadette",
-      "title": "Birgit Floral Dress",
-      "price": 66568.05,
-      "desc": "Fabric: Lightweight, non-stretch charmeuse - Colorblock floral print - 3/4 puff sleeves with button cuffs - Hand wash or dry clean - Shell: 100% polyester - Unlined"
-    },
-    {
       "id": 72,
       "gender": "women",
       "category": "clothing",
@@ -2171,17 +2160,6 @@
       "desc": ""
     },
     {
-      "id": 238,
-      "gender": "women",
-      "category": "accessories",
-      "subcategory": "hats",
-      "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ragbo/ragbo460811d7ef/ragbo460811d7ef_1650910665118_2-0._SH20_QL90_UY1095_.jpg",
-      "brand": "Acne Studios",
-      "title": "Bucket Hat",
-      "price": 170.0,
-      "desc": ""
-    },
-    {
       "id": 239,
       "gender": "women",
       "category": "accessories",
@@ -2592,7 +2570,7 @@
       "id": 276,
       "gender": "women",
       "category": "designer boutique",
-      "subcategory": "sandals",   
+      "subcategory": "sandals",
       "image": "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mardb/mardb309791d520/mardb309791d520_1651511284120_2-0.__UX540__._QL90_.jpg",
       "brand": "Marni",
       "title": "Sandals",

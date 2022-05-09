@@ -7,6 +7,7 @@ import SliderItem from "./SliderItem";
 import Data from "../slider.json";
 
 
+
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -40,8 +41,16 @@ function PrevArrow(props) {
 }
 
 const Home = () => {
+ 
+
   const caraouselOne = () =>
-    Data.sliderData.map((item) => <SliderItem {...item} key={item.id} />);
+    Data.sliderData.map((item) => (
+      <SliderItem
+        {...item}
+        key={item.id}
+        
+      />
+    ));
   const caraouselTwo = () =>
     Data.blackLedData.map((item) => <SliderItem {...item} key={item.id} />);
   const caraouselThree = () =>

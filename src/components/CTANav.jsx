@@ -1,13 +1,20 @@
-import React from 'react'
-import styles from './CTANav.module.css';
-import { useSelector, useDispatch } from 'react-redux';
-import {logout} from '../Redux/Auth/action';
-import {useNavigate} from 'react-router-dom';
+import React from "react";
+import styles from "./CTANav.module.css";
+import { useSelector, useDispatch } from "react-redux";
+import { logout } from "../Redux/Auth/action";
+import { useNavigate } from "react-router-dom";
+import { loadFromLocal } from '../Utils/LocalStorage';
 
 const CTANav = () => {
-  const token = useSelector(state => state.auth.token);
+  const token = useSelector((state) => state.auth.token);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const cartCount = loadFromLocal('cartCount');
+  const [count, setCount] = React.useState(cartCount);
+
+  React.useState(() => {
+    setCount(cartCount);
+  }, [count]);
 
   return (
     <div className={styles.ctaContainer}>
@@ -38,23 +45,27 @@ const CTANav = () => {
         eligible
       </div>
       <div className={styles.cta}>
-        {!token?<p>SignIn / Register</p>:<p onClick={()=> dispatch(logout())}>SignOut</p>}
+        {!token ? (
+          <p onClick={() => navigate("/signin")}>SignIn / Register</p>
+        ) : (
+          <p onClick={() => dispatch(logout())}>SignOut</p>
+        )}
         <p className={styles.wishlist}>
           <img
             src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/_global/images/topnav/rebrand-hearts_1-0.png"
             alt="Wishlist"
           />
         </p>
-        <p className={styles.cart} onClick={()=> navigate('/cart')}>
+        <p className={styles.cart} onClick={() => navigate("/cart")}>
           <img
             src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/_global/images/topnav/bag_1-0.png"
             alt="Cart"
           />
         </p>
-        <p style={{ padding: 0 }}>0</p>
+        <p style={{ padding: 0 }}>{count}</p>
       </div>
     </div>
   );
-}
+};
 
 export default CTANav;

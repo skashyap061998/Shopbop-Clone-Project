@@ -1,24 +1,28 @@
 import { useState, useRef } from "react";
 import styles from "./Modal.module.css";
+import { searchFilter } from '../Redux/Products/action';
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Modal = ({ show, setShow }) => {
-    const gender = useRef("");
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const gender = useRef("women");
 
-    const [women, setWomen] = useState(false);
-    const [men, setMen] = useState(false);
+  const [women, setWomen] = useState(true);
+  const [men, setMen] = useState(false);
 
-  //   const [search, setSearch] = useState("");
-    // console.log(gender.current);
-
+  const [search, setSearch] = useState("");
 
   const handleClose = () => setShow(false);
 
-  //   const searchHandler = (e) => {
-  //     setSearch(e.target.value.trim());
-  //   };
-
-  //   console.log(search);
-
+  const searchHandler = (e) => {
+    setSearch(e.target.value.trim());
+    if (e.code === "Enter"){
+      dispatch(searchFilter({gender:gender.current, key:search}));
+      navigate(`/products/${search}`);
+    } 
+  };
 
   if (show) {
     return (
@@ -52,7 +56,6 @@ const Modal = ({ show, setShow }) => {
                   setWomen(false);
                   gender.current = "men";
                 }}
-                
                 className={
                   men
                     ? `${styles.genTab} ${styles.activeTab}`
@@ -95,7 +98,11 @@ const Modal = ({ show, setShow }) => {
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
               </svg>
             </span>
-            <input type="text" placeholder="What's are you looking for?" />
+            <input
+              type="text"
+              placeholder="What's are you looking for?"
+              onKeyUp={(e) => searchHandler(e)}
+            />
           </div>
         </div>
       </>

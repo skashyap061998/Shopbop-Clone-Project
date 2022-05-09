@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./MegaMenu.module.css";
 import { useState } from "react";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
 
 const MegaMenu = () => {
   const [show, setShow] = useState(false);
@@ -38,16 +39,16 @@ const MegaMenu = () => {
                 <a href="/">New Today</a>
                 <a href="/">New This Week</a>
                 <a href="/">Top Sellers</a>
-                <a href="/">Designer Boutique</a>
-                <a href="/">All What's New</a>
+                <Link to="/products/designer boutique">Designer Boutique</Link>
+                <Link to="/products/clothing">All What's New</Link>
               </div>
               <div>
                 <p className={styles.dropHeadings}>WHAT'S NEW BY CATEGORY</p>
-                <a href="/">Clothing</a>
-                <a href="/">Shoes</a>
-                <a href="/">Bags</a>
-                <a href="/">Jewelery & Accessories</a>
-                <a href="/">Men</a>
+                <Link to="/products/clothing">Clothing</Link>
+                <Link to="/products/shoes">Shoes</Link>
+                <Link to="/products/bags">Bags</Link>
+                <Link to="/products/jewelery">Jewelery & Accessories</Link>
+                <Link to="/products/men">Men</Link>
               </div>
               <div>
                 <p className={styles.dropHeadings}>DISCOVER</p>
@@ -63,7 +64,7 @@ const MegaMenu = () => {
                   alt=""
                 />
                 <p className={styles.dropHeadings}>The Dress Shop</p>
-                <a href="/">Shop Now</a>
+                <Link to="/products/clothing">Shop Now</Link>
               </div>
             </div>
           </div>
@@ -540,7 +541,12 @@ const MegaMenu = () => {
           </div>
         </div>
         <div className={styles.dropdown}>
-          <span onClick={() => {setShow(true);}}>
+          <span
+            onClick={() => {
+              setShow(true);
+            }}
+            style={{cursor: 'pointer'}}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

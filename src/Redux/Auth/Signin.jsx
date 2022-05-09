@@ -8,7 +8,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 function Signin() {
   const token = useSelector((state) => state.auth.token);
-  
+
   const [formData, setFormData] = React.useState({});
   const form = React.useRef();
   const [invalid, setInvalid] = React.useState(false);
@@ -18,7 +18,7 @@ function Signin() {
   let navigate = useNavigate();
   let location = useLocation();
 
-  let from = location?.state?.from?.pathname || "/cart";
+  let from = location?.state?.from?.pathname || "/";
 
   React.useEffect(() => {
     if (token) {
@@ -77,7 +77,7 @@ function Signin() {
   return (
     <>
       <div className={styles.signIn}>
-        <div className={styles.signInTitle}>
+        <div className={styles.signInTitle} onClick={() => navigate("/")}>
           <img
             alt=""
             src="https://images-na.ssl-images-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/AUI_desktop_SB_rebrand_1-0.png._CB485948808_.png"
@@ -146,7 +146,10 @@ function Signin() {
             <p>More Sign in Options</p>
             <button className={styles.amazonBtn}>Login with Amazon</button>
             <p>New to shopbop?</p>
-            <button className={styles.registerBtn}>
+            <button
+              className={styles.registerBtn}
+              onClick={() => navigate("/register")}
+            >
               Create your Shopbop account
             </button>
           </div>

@@ -1,9 +1,14 @@
 import React from 'react';
 import styles from './SliderItem.module.css';
+import { useNavigate } from "react-router-dom";
 
-const SliderItem = ({image, brand, title, price}) => {
+const SliderItem = ({id, image, brand, title, price}) => {
+  const navigate = useNavigate();
   return (
-    <div className="itemContainer">
+    <div
+      className="itemContainer"
+      onClick={() => navigate(`/product/${id}`)}
+    >
       <div className={styles.itemImg}>
         <img src={image} alt={title} />
       </div>

@@ -10,7 +10,6 @@
 }
 .heading{
     font-size:2rem;
-
 }
 
 .success{
@@ -36,7 +35,7 @@
 .info > button{
     padding:0.5rem;
     height:4rem;
-    width:80%;
+    width:100%;
     background:#ee4a1b;
 }
 

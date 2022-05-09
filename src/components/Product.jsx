@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Product.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import SliderItem from "./SliderItem";
 import Data from "../slider.json";
-
+import { useParams, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { getData } from "../Redux/Products/action";
+import data from "../mainData.json";
+import sliderData from "../slider.json";
+import { saveToLocal, loadFromLocal } from "../Utils/LocalStorage";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -39,10 +44,42 @@ function PrevArrow(props) {
   );
 }
 
-
 const Product = () => {
   const caraouselOne = () =>
     Data.sliderData.map((item) => <SliderItem {...item} key={item.id} />);
+  
+  const navigate = useNavigate();
+  
+  
+  
+  
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getData(data.Data));
+  }, []);
+  
+  const curData = useSelector((state) => state.prod.products);
+  const [itemData, setItemData] = useState({});
+  const { id } = useParams();
+  const slideData = sliderData.sliderData;
+  
+  const allData = [...slideData, ...curData];
+  const singleData = allData.filter((el) => el.id === parseInt(id));
+  
+  useEffect(() => {
+    setItemData({ ...singleData[0] });
+  }, [id, singleData[0]]);
+  
+  const cartData = loadFromLocal("cartData") || [];
+  const [cart, setCart] = useState(cartData);
+
+  if(!cart){
+   
+  }
+   useEffect(() => {
+     if(cart) saveToLocal("cartData", cart);
+   }, [cart]);
+  
   return (
     <>
       <div className={styles.container}>
@@ -95,16 +132,13 @@ const Product = () => {
         </div>
 
         <div className={styles.product_main}>
-          <img
-            src="https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/bashh/bashh3036434574/bashh3036434574_1651606316855_2-0._SX1000_QL90_.jpg"
-            alt=""
-          />
+          <img src={itemData.image} alt="" />
         </div>
 
         <div className={styles.product_details}>
-          <p className={styles.head}>ba&sh + </p>
-          <p className={styles.title}>Jansan Sweater</p>
-          <p className={styles.price}>₹ 18,363.60</p>
+          <p className={styles.head}>{itemData.brand}</p>
+          <p className={styles.title}>{itemData.title}</p>
+          <p className={styles.price}>₹ {itemData.price}</p>
           <div className={styles.info}>
             <ul>
               <li>Fabric: Lightweight, non-stretch technical weave</li>
@@ -117,7 +151,15 @@ const Product = () => {
               <li>Imported, Romania</li>
             </ul>
           </div>
-          <button className={styles.bag}>Add To Bag</button>
+          <button
+            className={styles.bag}
+            onClick={() => {
+              setCart([...cart, itemData]);
+              setTimeout(() => { navigate("/cart"); }, 100);
+            }}
+          >
+            Add To Bag
+          </button>
           <button className={styles.wishlist}>Add To Wish List</button>
           <h6 className={styles.return}>
             FREE express international delivery and EASY Returns
@@ -155,6 +197,5 @@ const Product = () => {
     </>
   );
 };
-
 
 export default Product;

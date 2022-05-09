@@ -1,9 +1,10 @@
 import React from "react";
 import styles from './Register.module.css';
 import {saveToLocal, loadFromLocal} from '../../Utils/LocalStorage';
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
-
+  let navigate = useNavigate();
   const [formData, setFormData] = React.useState({});
   const form = React.useRef();
   const [exists, setExists] = React.useState(false);
@@ -59,7 +60,7 @@ function Register() {
   return (
     <div>
       <div className={styles.register}>
-        <div className={styles.registerTitle}>
+        <div className={styles.registerTitle} onClick={() => navigate("/")}>
           <img
             alt=""
             src="https://images-na.ssl-images-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/AUI_desktop_SB_rebrand_1-0.png._CB485948808_.png"
@@ -138,9 +139,9 @@ function Register() {
           <div className={styles.signInOptions}>
             <p className={styles.signInOption}>
               Already have an account?
-              <a href="/signin" className={styles.SignInLink}>
+              <Link to="/signin" className={styles.SignInLink}>
                 <span style={{ padding: "0.5rem" }}>Sign In</span>
-              </a>
+              </Link>
             </p>
             <p className={styles.arrow}>
               <i className="fa-solid fa-caret-right"></i>

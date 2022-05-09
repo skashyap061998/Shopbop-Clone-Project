@@ -4,11 +4,15 @@ import { filterProducts, getData, sortProducts } from "../Redux/Products/action"
 import data from ".././mainData.json";
 import ReactPaginate from "react-paginate";
 import styles from "./Products.module.css";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
-export const Products = () => {
-  const curData = useSelector((state) => state.prod.products);
 
-  // console.log(curData);
+const Products = () => {
+  const {id} = useParams();
+
+  const navigate = useNavigate();
+  const curData = useSelector((state) => state.prod.filterData);
+
   const [man, setMan] = useState(data.Data);
   const [pagenumber, setPagenumber] = useState(0);
 
@@ -17,35 +21,21 @@ export const Products = () => {
 
 
   useEffect(() => {
-    // console.log(data.Data);
     dispatch(getData(data.Data));
-  }, [dispatch]);
+    dispatch(filterProducts(id));
+  }, [dispatch, id]);
 
 
   const handleSort = (e) => {
-    // dispatch sort products on change
     dispatch(sortProducts(e.target.value));
-    setMan([...curData]);
   };
-
-  const handleSearch = (e) => {
-    if(e.key === 'Enter'){
-      dispatch(filterProducts(e.target.value));
-      setMan([...curData]);
-    }
-  };
-
-  const tabSearch =(value)=>{
-    dispatch(filterProducts(value));
-    setMan([...curData]);
-  }
 
 
   const userPerpage = 20; //12
   const pageVisited = userPerpage * pagenumber; //0
-  const displayUser = man.map((item) => {
+  const displayUser = curData.map((item) => {
     return (
-      <div key={item.id}>
+      <div key={item.id} onClick={() => navigate(`/product/${item.id}`)}>
         <div className={styles.image}>
           <img src={item.image} className={styles.img} alt="" />
         </div>
@@ -64,20 +54,30 @@ export const Products = () => {
 
   return (
     <>
-    <div id={styles.headerDiv}>
-      <div id={styles.sideBar}>
-        <p>Shop All</p>
-        <p>New Today</p>
-        <p onClick={()=> tabSearch('clothing')}>Clothing</p>
-        <p onClick={()=> tabSearch('shoes')}>Shoes</p>
-        <p onClick={()=> tabSearch('bags')}>Bags</p>
-        <p onClick={()=> tabSearch('jewelery')}>Jewelery</p>
-        <p onClick={()=> tabSearch('accessories')}>Accessories</p>
-        <p onClick={()=> tabSearch('designer boutique')}>Designer Boutique</p>
-        <p onClick={()=> tabSearch('men')}>Men</p>
+      <div className={styles.headerDiv}>
+        <div className={styles.sideBar}>
+          <p onClick={() => navigate("/products/clothing")}>Shop All</p>
+          <p onClick={() => navigate("/products/designer boutique")}>
+            New Today
+          </p>
+          <p onClick={() => navigate("/products/clothing")}>Clothing</p>
+          <p onClick={() => navigate("/products/shoes")}>Shoes</p>
+          <p onClick={() => navigate("/products/bags")}>Bags</p>
+          <p onClick={() => navigate("/products/jewelery")}>Jewelery</p>
+          <p onClick={() => navigate("/products/accessories")}>Accessories</p>
+          <p onClick={() => navigate("/products/designer boutique")}>
+            Designer Boutique
+          </p>
+          <p onClick={() => navigate("/products/men")}>Men</p>
+        </div>
+        <div className={styles.banner} onClick={() => navigate("/")}>
+          <img
+            src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/desktop/mastheads/2022/2022_05/sb_20220506_desktop_WNMH_mother_1-2.jpg"
+            alt=""
+          />
+        </div>
       </div>
-    </div>
-    <div className={styles.menTop}>
+      <div className={styles.menTop}>
         <div id={styles.topleft}>
           <div id={styles.filter}>FILTER</div>
           <div id={styles.desiner}>
@@ -97,15 +97,15 @@ export const Products = () => {
             </select>
           </div>
           <div id={styles.clear}>
-            <a>CLEAR ALL</a>
+            <p onClick={() => window.location.reload()} style={{margin:'0'}}>CLEAR ALL</p>
           </div>
         </div>
 
         <div>
-        <input type="text" placeholder="Search Products" onKeyPress={handleSearch} />
+          {/* <input type="text" placeholder="Search Products" onKeyPress={handleSearch} /> */}
           <strong>
             Sort By:
-            <select  onChange={handleSort}>
+            <select onChange={handleSort}>
               <option>Newest</option>
               <option value="lth">LowToHigh</option>
               <option value="htl">HighToLow</option>
@@ -113,19 +113,6 @@ export const Products = () => {
           </strong>
         </div>
       </div>
-
-      {/* <div><strong>Sort By:
-        <select
-          onChange={(e) => {
-            SortingPrice(e);
-          }}
-        >
-          <option>Sort</option>
-          <option value="lth">LowToHigh</option>
-          <option value="htl">HighToLow</option>
-        </select>
-        </strong>
-      </div> */}
 
       <div className={styles.paginate}>
         <div className={styles.left_paginate}>
@@ -154,3 +141,5 @@ export const Products = () => {
     </>
   );
 };
+
+export default Products;
